@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doughlicious</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <main>
+    <header>
         <h1>Welcome to Doughlicious</h1>
         <nav>
             <ul>
@@ -23,12 +24,13 @@
             <img src="imagens/img2.jpg" alt="Three donuts." title="Three delicious donuts." width="640" height="409">
             <figcaption>Three Best Friends!</figcaption>
         </figure>
-
+    </header>
         <hr>
 
+    <main>
         <article id="about">
             <h2>About Doughlicious</h2>
-            <p>Doughlicious was founded in 2023 and built from our love of donuts. We hope our shop adds sweetness to our little town.</p>
+            <p>Doughlicious was founded in <time datetime="2023">2023</time> and built from our <strong>love of donuts</strong>. We hope our shop adds sweetness to our little town.</p>
         </article>
 
         <aside>
@@ -36,7 +38,7 @@
             <details>
                 <summary>When did donuts first appear in the United States?</summary>
                 <p>The history of the donut itself is generally traced to Dutch immigrants in 17th and 18th-century New York, then New
-                Netherland, who prepared fried dough balls called <em>olie koeken</em> or <em>olykoeks</em>, which means “oil cakes.”<br>Source: <a href="https://www.britannica.com/topic/doughnut" target="_blank" rel="external">www.brittanica.com</a></p>
+                Netherland, who prepared fried dough balls called <em>olie koeken</em> or <em>olykoeks</em>, which means “oil cakes.” (Source: <cite><a href="https://www.britannica.com/topic/doughnut" target="_blank" rel="external">Brittanica.com</a></cite>)</p>
             </details>
         </aside>
 
@@ -45,17 +47,17 @@
         <article id="menu">
             <h2>Our Menu</h2>
             <table>
+                <caption>Our Donuts</caption>
                 <thead>
-                    <th>Our Donuts</th>
+                    <tr>
+                        <th>Donuts</th>
+                        <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+                        <th scope="col">Price</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>Donuts</th>
-                        <th>Qty</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">Caramel Crunch</td>
+                        <th scope="row" rowspan="3">Caramel Crunch</td>
                         <td>1</td>
                         <td>$1.50</td>
                     </tr>
@@ -68,7 +70,7 @@
                         <td>$3.25</td>
                     </tr>
                     <tr>
-                        <td rowspan="3">Maple Dream</td>
+                        <th scope="row" rowspan="3">Maple Dream</td>
                         <td>1</td>
                         <td>$2.00</td>
                     </tr>
@@ -89,13 +91,13 @@
             </table>
             <p><a href="#">Back to top</a></p>
         </article>
+    </main>
 
         <hr>
 
-        <footer>
-            <p>Copyright &copy; Doughlicious</p>
-        </footer>
+    <footer>
+        <p>Copyright &copy; Doughlicious</p>
+    </footer>
 
-    </main>
 </body>
 </html>
