@@ -1,7 +1,31 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
 /* 
 ffcf8f - yellow 
 f291d8 - pink 
 df32d4 - purple 
 */
+
+/* RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea {
+    font: inherit;
+}
