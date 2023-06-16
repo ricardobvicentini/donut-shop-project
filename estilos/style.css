@@ -1,12 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
-
-/* 
-ffcf8f - yellow 
-f291d8 - pink 
-df32d4 - purple 
-*/
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Nunito&display=swap');
 
 /* RESET */
 
@@ -28,4 +22,93 @@ input,
 button,
 textarea {
     font: inherit;
+}
+
+/* VARIABLES */
+
+:root {
+    /* Fonts */
+    --FF: 'Nunito', sans-serif;
+    --FF-HEADINGS: 'Chango', cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* Colors */
+    --BG-COLOR: #df32d4;
+    --BG-FADE: #f291d8;
+    --BG-IMAGE: linear-gradient(to bottom, var(--BG-COLOR), var(--BG-FADE));
+    --BG-BODY: #ffcf8f;
+    --BORDER-COLOR: #240221;
+    --HIGHLIGHT-COLOR: #8a2970;
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+    --LINK-ACTIVE: var(--HIGHLIGHT-COLOR);
+
+    /* Borders */
+    --BORDERS: 2px solid var(--BORDER-COLOR);
+}
+
+/* UTILITY CLASSES */
+
+.offscreen {
+    position: absolute;
+    left: -10000px
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+/* GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+    font-family: var(--FF);
+    background-color: var(--BG-COLOR);
+    background-image: var(--BG-IMAGE);
+}
+
+body {
+    background-color: var(--BG-BODY);
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: var(--BORDERS);
+    border-right: var(--BORDERS);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: var(--FF-HEADINGS);
+    letter-spacing: 0.1em;
+    color: var(--BORDER-COLOR);
+}
+
+h2,
+h3 {
+    color: var(--HIGHLIGHT-COLOR);
+    margin-bottom: 1em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a:any-link {
+    color: var(--LINK-COLOR);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--LINK-HOVER);
+}
+
+a:active {
+    color: var(--LINK-ACTIVE);
 }
