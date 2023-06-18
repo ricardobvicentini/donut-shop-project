@@ -137,3 +137,19 @@ a:active {
     color: var(--HEADER-COLOR);
     padding: var(--PADDING-TB) var(--PADING-SIDE);
 }
+
+.header__nav {
+    background-color: var(--BG-NAV);
+    border-bottom: var(--BORDERS);
+    font-weight: bold;
+    box-shadow: 0 6px 5px -5px var(--BORDER-COLOR);
+}
+
+.header__ul {
+    padding: var(--PADDING-TB) var(--PADING-SIDE);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
