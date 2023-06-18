@@ -189,3 +189,14 @@ a:active {
         transform: skew(-10deg, -5deg) scaleY(1);
     }
 }
+
+/* FOOTER */
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--BG-HEADER);
+    color: var(--HEADER-COLOR);
+    padding: var(--PADDING-TB) var(--PADING-SIDE);
+    text-align: center;
+}
