@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="estilos/about.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
-</head>
-<body>
-       <header class="header">
-        <h1 class="header__h1">Doughlicious</h1>
-        <nav class="header__nav">
-                <ul class="header__ul">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/#menu">Menu</a></li>
-                    <li><a href="hours.html">Hours</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-        </nav>
-    </header>   
-    <main>
-        <section class="hero">
-                <figure>
-                    <img src="imagens/img4.jpg" alt="Three donuts." title="six colorful donuts." width="640" height="427">
-                    <figcaption class="offscreen">Try our donuts!</figcaption>
-                </figure>
-        </section>
-    
-</body>
+    <link rel="stylesheet" href="estilos/about.css" />
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Doughlicious</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <section class="hero">
+        <figure>
+          <img
+            src="imagens/img4.jpg"
+            alt="Three donuts."
+            title="six colorful donuts."
+            width="640"
+            height="427"
+          />
+          <figcaption class="offscreen">Try our donuts!</figcaption>
+        </figure>
+      </section>
+    <main class="main">
+
+      <article id="about" class="main__article">
+        <h2>About Doughlicious</h2>
+        <p>
+          Doughlicious was founded in <time datetime="2023">2023</time> and
+          built from our <strong>love of donuts</strong>. We hope our shop adds
+          sweetness to our little town.
+        </p>
+
+        <aside>
+            <h3>Donut Trivia</h3>
+            <details>
+            <summary>When did donuts first appear in the United States?</summary>
+            <p>
+                The history of the donut itself is generally traced to Dutch
+                immigrants in 17th and 18th-century New York, then New Netherland,
+                who prepared fried dough balls called <em>olie koeken</em> or
+                <em>olykoeks</em>, which means “oil cakes.” (Source:
+                <cite
+                ><a
+                    href="https://www.britannica.com/topic/doughnut"
+                    target="_blank"
+                    rel="external"
+                    >Brittanica.com</a
+                ></cite
+                >)
+            </p>
+            </details>
+        </aside>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy;</span>
+        <span class="nowrap">Doughlicious</span>
+      </p>
+    </footer>
+  </body>
 </html>

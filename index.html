@@ -11,7 +11,7 @@
 <body>
 
     <header class="header">
-        <h1 class="header__h1">Welcome to Doughlicious</h1>
+        <h1 class="header__h1">Doughlicious</h1>
         <nav class="header__nav">
                 <ul class="header__ul">
                     <li><a href="#menu">Menu</a></li>
@@ -20,9 +20,9 @@
                     <li><a href="about.html">About</a></li>
                 </ul>
         </nav>
-    </header>   
-    <main>
-        
+    </header>
+
+    <main class="main">    
         <section class="hero">
             <h2 class="hero__h2">Welcome!</h2>
                 <figure>
@@ -31,23 +31,7 @@
                 </figure>
         </section>
 
-            <article id="about">
-                <h2>About Doughlicious</h2>
-                <p>Doughlicious was founded in <time datetime="2023">2023</time> and built from our <strong>love of donuts</strong>. We hope our shop adds sweetness to our little town.</p>
-            </article>
-
-            <aside>
-                <h3>Donut Trivia</h3>
-                <details>
-                    <summary>When did donuts first appear in the United States?</summary>
-                    <p>The history of the donut itself is generally traced to Dutch immigrants in 17th and 18th-century New York, then New
-                    Netherland, who prepared fried dough balls called <em>olie koeken</em> or <em>olykoeks</em>, which means “oil cakes.” (Source: <cite><a href="https://www.britannica.com/topic/doughnut" target="_blank" rel="external">Brittanica.com</a></cite>)</p>
-                </details>
-            </aside>
-
-            
-
-            <article id="menu">
+            <article id="menu" class="main__article">
                 <h2>Our Menu</h2>
                 <table>
                     <caption>Our Donuts</caption>
@@ -96,8 +80,11 @@
             </article>
     </main>
         
-    <footer>
-        <p>Copyright &copy; Doughlicious</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span> 
+            <span class="nowrap">Doughlicious</span>
+        </p>
     </footer>
 
 </body>
