@@ -27,7 +27,7 @@
         <figure>
             <img class="hero__img" src="imagens/img1.jpg" alt="Trays full of donuts" title="Happiness fresh from the oven." width="640"
                 height="427">
-            <figcaption class="offset">Happiness fresh from the oven!</figcaption>
+            <figcaption class="offscreen">Happiness fresh from the oven!</figcaption>
         </figure>
     </section>
     
@@ -37,52 +37,51 @@
             <p><address>123 Dough Ave. 35</address><br>
             <address>Austin, TX 67890</address></p>
             <p>Phone: <a href="tel:+4444444444">444-444-4444</a></p>
-            <p><a href="#">Back to top</a></p>
         </article>
 
-        <article class="main__article">
-            <h2>Our Contact Form</h2>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
             <form action="#" method="get">
-                <fieldset>
-                    <legend>Send us a message</legend>
-                    <p>
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" id="name" autocomplete="on" required placeholder="your name">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send us a message</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name: </label>
+                        <input class="contact__input" type="text" name="name" id="name" autocomplete="on" required placeholder="your name">
                     </p>
-                    <p>
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" required placeholder="your email">
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email: </label>
+                        <input class="contact__input" type="email" name="email" id="email" required placeholder="your email">
                     </p>
 
-                    <p>
-                        <label for="message">Your message</label>
+                    <p class="contact__p">
+                        <label class="contact__label" for="message">Your message:</label>
                         <br>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"></textarea>
                     </p>
                 </fieldset>
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                <fieldset>
-                    <legend>What's your favorite Doughlicious' donut?</legend>
-                    <p>
-                        <input type="checkbox" name="caramel" id="caramel" value="Caramel Crunch">
-                        <label for="caramel"> Caramel Crunch</label>
+                    <button class="contact__button"  type="submit">Submit</button>
+                    <button class="contact__button" type="reset">Reset</button>
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">What's your favorite Doughlicious' donut?</legend>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="caramel" id="caramel" value="Caramel Crunch">
+                        <label class="contact__label" for="caramel"> Caramel Crunch</label>
                     </p>
-                    <p>
-                        <input type="checkbox" name="maple" id="maple" value="Maple Dream">
-                        <label for="maple"> Maple Dream</label>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="maple" id="maple" value="Maple Dream">
+                        <label class="contact__label" for="maple"> Maple Dream</label>
                     </p>
-                    <p>
-                        <input type="checkbox" name="jelly" id="jelly" value="Jelly Joy">
-                        <label for="jelly"> Jelly Joy</label>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="jelly" id="jelly" value="Jelly Joy">
+                        <label class="contact__label" for="jelly"> Jelly Joy</label>
                     </p>
-                    <p>
-                        <input type="checkbox" name="cinnamon" id="cinnamon" value="Cinnamon Kiss">
-                        <label for="cinnamon"> Cinnamon Kiss</label>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="cinnamon" id="cinnamon" value="Cinnamon Kiss">
+                        <label class="contact__label" for="cinnamon"> Cinnamon Kiss</label>
                     </p>
                 </fieldset>
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
+                    <button class="contact__button" type="submit">Submit</button>
+                    <button class="contact__button" type="reset">Reset</button>
             </form>
         </article>
     </main>
