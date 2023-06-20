@@ -240,6 +240,7 @@ a:active {
 
 .contact__input, 
 .contact__textarea {
+    border: 1px solid red;
     padding: 0.5em;
     border-radius: 15px;
     border-width: 2px;
@@ -256,6 +257,21 @@ a:active {
 .contact__label {
     display: block;
     font-weight: bold;
+}
+
+.label__caramel,
+.label__maple,
+.label__jelly,
+.label__cinnamon {
+    display: inline-block;
+}
+
+.p__caramel,
+.p__maple,
+.p__jelly,
+.p__cinnamon {
+    display: flex;
+    justify-content: center;
 }
 
 /* FOOTER */
