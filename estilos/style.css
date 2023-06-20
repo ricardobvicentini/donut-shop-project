@@ -81,7 +81,10 @@ html {
     font-size: var(--FS);
     font-family: var(--FF);
     background-color: var(--BG-COLOR);
-    background-image: var(--BG-IMAGE);
+    background-image: url(../imagens/stacked-waves-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 body {
@@ -240,7 +243,6 @@ a:active {
 
 .contact__input, 
 .contact__textarea {
-    border: 1px solid red;
     padding: 0.5em;
     border-radius: 15px;
     border-width: 2px;
