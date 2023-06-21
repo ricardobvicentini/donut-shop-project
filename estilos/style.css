@@ -276,6 +276,45 @@ a:active {
     justify-content: center;
 }
 
+/* MENU */
+
+ thead, 
+ tbody, 
+ tfoot, 
+ tr {
+    display: contents;
+ }
+
+ .menu__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "hd1 hd2 hd3"
+        "caramel caramel1 caramel1p"
+        "caramel caramel2 caramel2p"
+        "caramel caramel3 caramel3p"
+        "maple maple1 maple1p"
+        "maple maple2 maple2p"
+        "maple maple3 maple3p"
+        "frosting frosting frosting";
+    gap: 0.1em;
+    margin-bottom: 1em;
+ }
+
+ .menu__caramel {
+    grid-area: caramel;
+ }
+
+ .menu__maple {
+    grid-area: maple;
+ }
+
+ .menu__frosting {
+    grid-area: frosting;
+    color: var(--HIGHLIGHT-COLOR);
+    font-weight: bold;
+ }
+
 /* FOOTER */
 
 footer {
