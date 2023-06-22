@@ -7,6 +7,8 @@
     <title>Doughlicious</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <script src="js/main.js" defer></script>
+    <!-- defer faz o navegador carregar tudo antes do js -->
 </head>
 <body>
 
@@ -25,7 +27,7 @@
     <section class="hero">
             <h2 class="hero__h2">Welcome!</h2>
                 <figure>
-                    <img class="hero__img" src="imagens/img2.jpg" alt="Three donuts." title="Three delicious donuts." width="640" height="409">
+                    <img class="hero__img" src="imagens/img2.jpg" alt="Three donuts." title="Three delicious donuts." width="640" height="427">
                     <figcaption class="offscreen">Three Best Friends!</figcaption>
                 </figure>
         </section>
@@ -84,7 +86,7 @@
         
     <footer class="footer">
         <p>
-            <span class="nowrap">Copyright &copy;</span> 
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span> 
             <span class="nowrap">Doughlicious</span>
         </p>
     </footer>
